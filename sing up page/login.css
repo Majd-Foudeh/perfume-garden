@@ -4,7 +4,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
   } */
-  
+  .focuscolor:focus-visible{
+    border-color: #ffd95e;
+    border-width: 5px;
+   }
   .submit{
     display: flex;
     flex-direction: row;

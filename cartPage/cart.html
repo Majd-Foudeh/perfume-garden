@@ -26,17 +26,18 @@
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!">Start Bootstrap</a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class=" fa fa-bars"></span></button>
+                    aria-expanded="false" aria-label="Toggle navigation"><span class=" fa fa-bars"></span></button>
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="../index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -52,115 +53,138 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="fa fa-cart-shopping me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
+                        <a href="./cart.html">
+                            <button class="btn btn-outline-light" type="button">
+                                <i class="fa fa-cart-shopping me-1"></i>
+                                Cart
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button></a>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-<main>
-    <div class="px-4 px-lg-0">
-        
-        <div class="pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 p-5 bg-white bg-opacity-75 rounded shadow-3-strong my-5">
-
-                        <!-- Shopping cart table -->
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr class="" style="background-color: #F4D87B;">
-                                        <th scope="col" class="border-0 ">
-                                            <div class="p-2 px-3 text-uppercase">Product</div>
-                                        </th>
-                                        <th scope="col" class="border-0 ">
-                                            <div class="py-2 text-uppercase">Price</div>
-                                        </th>
-                                        <th scope="col" class="border-0 ">
-                                            <div class="py-2 text-uppercase">Quantity</div>
-                                        </th>
-                                        <th scope="col" class="border-0 ">
-                                            <div class="py-2 text-uppercase">Remove</div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr >
-                                        <th scope="row" class="border-0">
-                                            <div class="p-2">
-                                                <img src="https://bootstrapious.com/i/snippets/sn-cart/product-1.jpg"
-                                                    alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"> <a href="#"
-                                                            class="text-dark d-inline-block align-middle">Timex Unisex
-                                                            Originals</a></h5><span
-                                                        class="text-muted font-weight-normal font-italic d-block">Category:
-                                                        Watches</span>
-                                                </div>
-                                            </div>
-                                        </th>
-                                        <td class="border-0 align-middle"><strong>$79.00</strong></td>
-                                        <td class="border-0 align-middle"><strong>33 K</strong></td>
-                                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i
-                                                    class="fa fa-trash"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <div class="p-2">
-                                                <img src="https://bootstrapious.com/i/snippets/sn-cart/product-2.jpg"
-                                                    alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix
-                                                            camera lense</a></h5><span
-                                                        class="text-muted font-weight-normal font-italic">Category:
-                                                        Electronics</span>
-                                                </div>
-                                            </div>
-                                        </th>
-                                        <td class="align-middle"><strong>$79.00</strong></td>
-                                        <td class="align-middle "><strong>300 ml</strong></td>
-                                        <td class="align-middle"><a href="#" class="text-dark"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <div class="p-2">
-                                                <img src="https://bootstrapious.com/i/snippets/sn-cart/product-3.jpg"
-                                                    alt="" width="70" class="img-fluid rounded shadow-sm">
-                                                <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray
-                                                            Nike running shoe</a></h5><span
-                                                        class="text-muted font-weight-normal font-italic">Category:
-                                                        Fashion</span>
-                                                </div>
-                                            </div>
-                                        <td class="align-middle"><strong>$79.00</strong></td>
-                                        <td class="align-middle"><strong>3</strong></td>
-                                        <td class="align-middle"><a href="#" class="text-dark"><i
-                                                    class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- End -->
-                        <div class="mt-4 d-flex flex-column align-items-end">
-                            <p class="mb-0 me-2 fs-4 " style="color: #E38B29;">Subtotal <span class=" text-black fw-bolder">154 jd</span></p>
-                            <p class="text-muted">Taxes and shipping are calculated at checkout</p>
-                            <a href="" role="button" class="btn checkoutbtn bg-black text-light "><span>Go to checkout</span> </a>
-                            
-                        </div>
-                    </div>
-                    
+    <header class="bannerimg  py-5 shadow-6-strong " style="height: 280px;">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-black d-flex justify-content-between">
+                <div><h1 class="display-4 fw-bolder">Cart</h1></div>
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb fw-bolder fs-4" style="line-height: 4;">
+                            <li class="breadcrumb-item "><a class="text-black" href="" onclick="history.back() ">Shop</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                        </ol>
+                    </nav>
                 </div>
 
-                <!-- <div class="row py-5 p-4 bg-white rounded shadow-sm">
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="px-4 px-lg-0">
+
+            <div class="pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 bg-white bg-opacity-75 rounded shadow-3-strong my-5">
+
+                            <!-- Shopping cart table -->
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="" style="background-color: #F4D87B;">
+                                            <th scope="col" class="border-0 ">
+                                                <div class="p-2 px-3 text-uppercase">Product</div>
+                                            </th>
+                                            <th scope="col" class="border-0 ">
+                                                <div class="py-2 text-uppercase">Price</div>
+                                            </th>
+                                            <th scope="col" class="border-0 ">
+                                                <div class="py-2 text-uppercase">Quantity</div>
+                                            </th>
+                                            <th scope="col" class="border-0 ">
+                                                <div class="py-2 text-uppercase">Remove</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="border-0">
+                                                <div class="p-2">
+                                                    <img src="https://bootstrapious.com/i/snippets/sn-cart/product-1.jpg"
+                                                        alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                    <div class="ml-3 d-inline-block align-middle">
+                                                        <h5 class="mb-0"> <a href="#"
+                                                                class="text-dark d-inline-block align-middle">Timex
+                                                                Unisex
+                                                                Originals</a></h5><span
+                                                            class="text-muted font-weight-normal font-italic d-block">Category:
+                                                            Watches</span>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td class="border-0 align-middle"><strong>$79.00</strong></td>
+                                            <td class="border-0 align-middle"><strong>33 K</strong></td>
+                                            <td class="border-0 align-middle"><a href="#" class="text-dark"><i
+                                                        class="fa fa-trash"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="p-2">
+                                                    <img src="https://bootstrapious.com/i/snippets/sn-cart/product-2.jpg"
+                                                        alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                    <div class="ml-3 d-inline-block align-middle">
+                                                        <h5 class="mb-0"><a href="#"
+                                                                class="text-dark d-inline-block">Lumix
+                                                                camera lense</a></h5><span
+                                                            class="text-muted font-weight-normal font-italic">Category:
+                                                            Electronics</span>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td class="align-middle"><strong>$79.00</strong></td>
+                                            <td class="align-middle "><strong>300 ml</strong></td>
+                                            <td class="align-middle"><a href="#" class="text-dark"><i
+                                                        class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="p-2">
+                                                    <img src="https://bootstrapious.com/i/snippets/sn-cart/product-3.jpg"
+                                                        alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                    <div class="ml-3 d-inline-block align-middle">
+                                                        <h5 class="mb-0"> <a href="#"
+                                                                class="text-dark d-inline-block">Gray
+                                                                Nike running shoe</a></h5><span
+                                                            class="text-muted font-weight-normal font-italic">Category:
+                                                            Fashion</span>
+                                                    </div>
+                                                </div>
+                                            <td class="align-middle"><strong>$79.00</strong></td>
+                                            <td class="align-middle"><strong>3</strong></td>
+                                            <td class="align-middle"><a href="#" class="text-dark"><i
+                                                        class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End -->
+                            <div class="mt-4 d-flex flex-column align-items-end">
+                                <p class="mb-0 me-2 fs-4 " style="color: #E38B29;">Subtotal <span
+                                        class=" text-black fw-bolder">154 jd</span></p>
+                                <p class="text-muted">Taxes and shipping are calculated at checkout</p>
+                                <a href="../checkout page/checkout.html" role="button" class="btn checkoutbtn bg-black text-light "><span>Go to
+                                        checkout</span> </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="row py-5 p-4 bg-white rounded shadow-sm">
                     <div class="col-lg-6">
                         <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Coupon code</div>
                         <div class="p-4">
@@ -208,76 +232,76 @@
         </div>
     </div> -->
 
-</main>
+    </main>
 
-<!-- Footer -->
-<footer class="bg-white">
-   
-    <div class="container py-5">
-        <div class="row py-4">
-            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
-                <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod
-                    tempor incididunt.</p>
-                <ul class="list-inline mt-4">
-                    <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
-                                class="fa fa-twitter" style="color: #E38B29;"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
-                                class="fa fa-facebook" style="color: #E38B29;"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
-                                class="fa fa-instagram " style="color: #E38B29;"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
-                                class="fa fa-pinterest " style="color: #E38B29;"></i></a></li>
-                    <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-github"
-                                style="color: #E38B29;"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
-                <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-lg-0">
-                <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-                <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
-                    temporibus.
-                </p>
-                <div class="p-1 rounded border">
-                    <div class="input-group">
-                        <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
-                            class="form-control border-0 shadow-0">
-                        <div class="input-group-append">
-                            <button id="button-addon1" type="submit" class="btn btn-link"><i
-                                    class="fa fa-paper-plane" style="color: #E38B29;"></i></button>
+    <!-- Footer -->
+    <footer class="bg-white">
+
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt.</p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+                                    class="fa fa-twitter" style="color: #E38B29;"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+                                    class="fa fa-facebook" style="color: #E38B29;"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                                    class="fa fa-instagram " style="color: #E38B29;"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                                    class="fa fa-pinterest " style="color: #E38B29;"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-github"
+                                    style="color: #E38B29;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+                    <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+                        temporibus.
+                    </p>
+                    <div class="p-1 rounded border">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                                class="form-control border-0 shadow-0">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link"><i
+                                        class="fa fa-paper-plane" style="color: #E38B29;"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Copyrights -->
-    <div class=" py-4 bg-light">
-        <div class="container text-center">
-            <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+        <!-- Copyrights -->
+        <div class=" py-4 bg-light">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
     <script src="https://kit.fontawesome.com/f834d0470b.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
         integrity="sha512-XlOQs+lQdHfzv8YhWdZCtIkqMz/dXvNc8G0NLSRtBm+I/kuD1Y0Ft7VxgRmZi7V0m9XUIp7Vq5F5f5GUL09wuw=="
