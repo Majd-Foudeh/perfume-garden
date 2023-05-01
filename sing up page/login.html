@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -26,46 +27,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
         integrity="sha512-WJb+ZP8bzJQbRdRrzoC/aLr+spEjrQO/hRwbd4Z4hr4Og4X9q3pBdHJyTETcSfM8I0WafUwCZb/Cj0Ktl1FUbA=="
         crossorigin="anonymous" />
-<link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #f8f9fa;">
-          <div class="container px-4 px-lg-5">
-              <a class="navbar-brand" href="#!">Start Bootstrap</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#!">All Products</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                              <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-                  <form class="d-flex">
-                      <button class="btn btn-outline-dark" type="submit">
-                          <i class="fa fa-cart-shopping me-1"></i>
-                          Cart
-                          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                      </button>
-                  </form>
-              </div>
-          </div>
-      </nav>
-      </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black " style="background-color: #f8f9fa;">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fa fa-cart-shopping me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <section class=" backimg" style="background-color: #eee; height: 94vh;">
-        <div class="container-fluid h-100 w-100 " >
+    <section class=" backimg " style="background-color: #eee; height: 94vh;">
+        <div class="container h-100 w-100  ">
             <div class="row d-flex justify-content-center align-items-center h-100 ">
                 <div class="col-lg-12 col-xl-11 ">
-                    <div class="card text-black " style="background-color: rgba(255, 255, 255, 0.856); border-radius: 25px;">
+                    <div class="card text-black border-2 shadow-6-strong "
+                        style="background-color: rgba(255, 255, 255, 0.856); border-radius: 25px;">
                         <div class="card-body p-md-5">
                             <div class="row justify-content-center ">
                                 <div class="col-md-11  col-sm-11 col-lg-7 col-xl-8  order-2 order-lg-1">
@@ -75,20 +83,23 @@
                                     <form class="mx-1 mx-md-4" id="loginform">
 
                                         <div class="row">
+                                            
                                             <div class="col-6 d-flex flex-row align-items-center mb-4">
                                                 <!-- <i class="fas fa-user fa-lg me-3 fa-fw"></i> -->
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="text" id="username" name="username"
-                                                        class="form-control form-control-lg "required />
-                                                    <label class="form-label" for="username"> <i class="fas fa-user me-2"></i>Your Full Name</label>
+                                                        class="form-control form-control-lg focuscolor" required />
+                                                    <label class="form-label" for="username"> <i
+                                                            class="fas fa-user me-2"></i>Your Full Name</label>
                                                 </div>
                                             </div>
                                             <div class="col-6 d-flex flex-row align-items-center mb-4">
                                                 <!-- <i class="fas fa-phone fa-lg me-3 fa-fw" style="color: #E38B29;"></i> -->
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="text" id="phonenumber" name="phonenumber"
-                                                        class="form-control form-control-lg" required/>
-                                                    <label class="form-label  " for="phonenumber"> <i class="fas fa-phone me-2"></i> Phone Number</label>
+                                                        class="form-control form-control-lg" required />
+                                                    <label class="form-label  " for="phonenumber"> <i
+                                                            class="fas fa-phone me-2"></i> Phone Number</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -97,8 +108,9 @@
                                                 <!-- <i class="fas fa-user fa-lg me-3 fa-fw"></i> -->
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="text" id="email" name="email"
-                                                        class="form-control form-control-lg "  required />
-                                                    <label class="form-label" for="email"> <i class="fas fa-envelope me-2"></i>Your Email</label>
+                                                        class="form-control form-control-lg " required />
+                                                    <label class="form-label" for="email"> <i
+                                                            class="fas fa-envelope me-2"></i>Your Email</label>
                                                 </div>
                                             </div>
                                             <div class="col-6 d-flex flex-row align-items-center mb-4">
@@ -108,8 +120,8 @@
                                                     <option value="3">Three</option>
                                                     <option value="4">Four</option>
                                                     <option value="5">Five</option>
-                                                  </select>
-                                                  <label class="form-label select-label">Example label</label>
+                                                </select>
+                                                <label class="form-label select-label">Example label</label>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -118,7 +130,8 @@
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="password" id="password" name="password"
                                                         class="form-control form-control-lg " required />
-                                                    <label class="form-label" for="password"> <i class="fas fa-lock me-2"></i>password</label>
+                                                    <label class="form-label" for="password"> <i
+                                                            class="fas fa-lock me-2"></i>password</label>
                                                 </div>
                                             </div>
                                             <div class="col-6 d-flex flex-row align-items-center mb-4">
@@ -126,7 +139,8 @@
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="text" id="mainaddress" name="mainaddress"
                                                         class="form-control form-control-lg" required />
-                                                    <label class="form-label  " for="mainaddress"> <i class="fas fa-location-dot me-2"></i> Address</label>
+                                                    <label class="form-label  " for="mainaddress"> <i
+                                                            class="fas fa-location-dot me-2"></i> Address</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -136,7 +150,8 @@
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="password" id="confirmpassword" name="confirmpassword"
                                                         class="form-control form-control-lg " required />
-                                                    <label class="form-label" for="confirmpassword"> <i class="fas fa-lock me-2"></i>Re-enter Password</label>
+                                                    <label class="form-label" for="confirmpassword"> <i
+                                                            class="fas fa-lock me-2"></i>Re-enter Password</label>
                                                 </div>
                                             </div>
                                             <div class="col-6 d-flex flex-row align-items-center mb-4">
@@ -144,17 +159,62 @@
                                                 <div class="form-outline flex-fill mb-0">
                                                     <input type="text" id="seconderyaddress" name="seconderyaddress"
                                                         class="form-control form-control-lg" />
-                                                    <label class="form-label  " for="seconderyaddress"> <i class="fas fa-location-dot me-2"></i> Second Address <sub style="color: rgb(190, 190, 190);">(optional)</sub> </label>
+                                                    <label class="form-label  " for="seconderyaddress"> <i
+                                                            class="fas fa-location-dot me-2"></i> Second Address <sub
+                                                            style="color: rgb(190, 190, 190);">(optional)</sub> </label>
                                                 </div>
                                             </div>
                                         </div>
 
 
                                         <div class="form-check d-flex justify-content-center mb-5">
-                                            <input class="form-check-input me-2" type="checkbox" value=""
-                                                id="form2Example3c" />
-                                            <label class="form-check-label" for="form2Example3">
-                                                I agree all statements in <a href="#!">Terms of service</a>
+                                            <input class="form-check-input me-4" type="checkbox" value=""
+                                                id="form2Example3" />
+                                            <label class="row form-check-label" for="form2Example3">
+                                             <span class="col-7 p-0" >  I agree all statements in</span> 
+                                                <div class="container-fluid p-0 col-5">
+                                                    <div class="">
+                                                        <div class=" ">
+                                                            <!-- Button trigger modal -->
+                                                            <a type="button" class=" bg-gradient-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                Terms of Use
+                                                            </a>
+
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header ">
+                                                                            <h5 class="modal-title"
+                                                                                id="exampleModalLabel">Terms of Use
+                                                                            </h5>
+                                                                            <button type="button" class="btn-close"
+                                                                                data-bs-dismiss="modal"
+                                                                                aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            You agree to use our website for legitimate purposes and not for any illegal or unauthorized purpose, including without limitation, in violation of any intellectual property or privacy law. By agreeing to the Terms, you represent and warrant that you are at least the age of majority in your state or province of residence and are legally capable of entering into a binding contract.
+                                                                            <br><br>
+                                                                            You agree to not use our website to conduct any activity that would constitute a civil or criminal offence or violate any law. You agree not to attempt to interfere with our website’s network or security features or to gain unauthorized access to our systems.
+                                                                        </div>
+                                                                        <div
+                                                                            class="modal-footer justify-content-between">
+                                                                            <button type="button"
+                                                                                class="btn bg-gradient bg-dark text-light"
+                                                                                data-bs-dismiss="modal">Close</button>
+                                                                            <button type="button"
+                                                                                class="btn bg-gradient bg-warning ">I've read it</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
                                             </label>
                                         </div>
 
@@ -179,12 +239,14 @@
             </div>
         </div>
     </section>
-    
 
 
 
 
 
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 
     <script src="https://kit.fontawesome.com/f834d0470b.js" crossorigin="anonymous"></script>

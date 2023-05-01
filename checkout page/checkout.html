@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./checkout.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;font-display=swap">
+    <link rel="shortcut icon" href="../images/login.png">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+        integrity="sha512-JmUJ4SwUv4H4I/93JwjV7c/9FFIuVlaaAeJnsN5q5f5G5SXV7M2zRptMJiVx5XeUI1nVZaF5f5tw5E1K5l5A5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        .submitbtn:hover {
+            background-color: #ffc107;
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class=" fa fa-bars"></span></button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="./cart.html">
+                            <button class="btn btn-outline-light" type="button">
+                                <i class="fa fa-cart-shopping me-1"></i>
+                                Cart
+                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header class="bannerimg  py-5 shadow-6-strong " style="height: 280px;">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-black d-flex justify-content-between">
+                <div>
+                    <h1 class="display-4 fw-bolder">Checkout</h1>
+                </div>
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb fw-bolder fs-4" style="line-height: 4;">
+                            <li class="breadcrumb-item "><a class="text-black" href=""
+                                    onclick="history.go(-2) ">Shop</a></li>
+                            <li class="breadcrumb-item "><a class="text-black" href=""
+                                    onclick="history.go(-1) ">Cart</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="mb-10">
+        <div class="container mt-5">
+
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Your cart</span>
+                        <span class="badge badge-dark badge-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3 sticky-top">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Product name</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted"> 12 JD</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Second product</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted"> 8 JD</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Third item</h6>
+                                <small class="text-muted">Brief description</small>
+                            </div>
+                            <span class="text-muted"> 5 JD</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>EXAMPLECODE</small>
+                            </div>
+                            <span class="text-success">-5 JD</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (JOD)</span>
+                            <strong>20 JD</strong>
+                        </li>
+                    </ul>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <div class="input-group-append">
+                                <button type="button" class=" redeembtn ">Redeem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Billing address</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Full name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback"> Valid first name is required. </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Phone number</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                    required="">
+                                <div class="invalid-feedback"> Valid last name is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                    required="">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            <div class="invalid-feedback"> Please enter your shipping address. </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div> -->
+                        <div class="row justify-content-center align-items-center" >
+                            <div class="col-md-5 col-lg-5  mb-3">
+
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-dark dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select Your City </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="state">State</label>
+                                <select class="custom-select d-block w-100" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="zip">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback"> Zip code required. </div>
+                            </div>
+                        </div>
+                        <h4 class="mb-3">Shipping Address</h4>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    checked="" required="">
+                                <label class="custom-control-label" for="credit">Main Address</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    required="">
+                                <label class="custom-control-label" for="debit">Second Address</label>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback"> Name on card is required </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <div class="invalid-feedback"> Credit card number is required </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                                <div class="invalid-feedback"> Expiration date required </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                <div class="invalid-feedback"> Security code required </div>
+                            </div>
+                        </div> -->
+                        <hr class="mb-4">
+                        <!-- <button class="btn col-4 btn-dark submitbtn btn-lg btn-block" type="submit">Continue to checkout</button> -->
+
+                        <button class="checkoutbtn">
+                            <span class="circle1"></span>
+                            <span class="circle2"></span>
+                            <span class="circle3"></span>
+                            <span class="circle4"></span>
+                            <span class="circle5"></span>
+                            <span class="text">Submit</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <hr>
+    <footer class="bg-white">
+
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt.</p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+                                    class="fa fa-twitter" style="color: #E38B29;"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+                                    class="fa fa-facebook" style="color: #E38B29;"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                                    class="fa fa-instagram " style="color: #E38B29;"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                                    class="fa fa-pinterest " style="color: #E38B29;"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-github"
+                                    style="color: #E38B29;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+                    <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+                        temporibus.
+                    </p>
+                    <div class="p-1 rounded border">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                                class="form-control border-0 shadow-0">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link"><i
+                                        class="fa fa-paper-plane" style="color: #E38B29;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class=" py-4 bg-light">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">© 2019 Bootstrapious All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f834d0470b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+        integrity="sha512-XlOQs+lQdHfzv8YhWdZCtIkqMz/dXvNc8G0NLSRtBm+I/kuD1Y0Ft7VxgRmZi7V0m9XUIp7Vq5F5f5GUL09wuw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script>new mdb.Dropdown(document.querySelector('.dropdown-toggle'));
+    </script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite - 
+        //   see more here 
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
+
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function (e) {
+                var div = document.createElement("div");
+                div.className = 'd-none';
+                div.innerHTML = ajax.responseText;
+                document.body.insertBefore(div, document.body.childNodes[0]);
+            }
+        }
+        // this is set to BootstrapTemple website as you cannot 
+        // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+        // while using file:// protocol
+        // pls don't forget to change to your domain :)
+        injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
